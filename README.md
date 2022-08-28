@@ -1,4 +1,4 @@
-# Laravel 8 YouTube 影片下載器
+# Laravel 9 YouTube 影片下載器
 
 引入 athlon1600 的 youtube-downloader 套件來擴增 YouTube 影片下載器，有人可能看到很喜歡的 YouTube 影片，會擔心它有一天被刪掉再也看不到，所以會想把它載下來嗎？要是手機沒有吃到飽，或是你要搭飛機怕旅途無聊，把幾部 YouTube 影片載到手機平板來看，也是很不錯。
 
@@ -22,5 +22,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/OjVxCYo.gif)
+![](https://i.imgur.com/X0KnJ2b.gif)
 > 儘管著作權法是告訴乃論、不告不理，此外也較難構成民事求償要件，但透過下載器下載 YouTube 影片最好僅限於個人使用，否則難保吃上官司。另一方面，儘管可以依照著作權法第 51 條主張合理使用，但 Google 提醒「在使用並非您所擁有的版權素材時，沒有任何妙方可以讓自己絕對受到合理使用原則保護。」

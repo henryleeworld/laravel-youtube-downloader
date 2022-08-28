@@ -24,10 +24,14 @@ class YouTubeController extends Controller
 
     public function download(Request $request) 
     {
-        $links = $this->youTubeDownloader->getDownloadLinks($request->url);
+        $downloadOptions = $this->youTubeDownloader->getDownloadLinks($request->url);
+        $error = '';
+        if (!$downloadOptions->getAllFormats()) {
+            $error = 'No links found';
+        }
         return response()->json([
-            'error' => '',
-            'links' => $links,
+            'error' => $error,
+            'links' => last($downloadOptions->getCombinedFormats())->url ?? '',
         ]);
     }
 

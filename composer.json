@@ -2,36 +2,23 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": [
-        "framework",
-        "laravel"
-    ],
+    "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
-        "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.2.0",
-        "laravel/framework": "^8.15",
-        "laravel/tinker": "^2.5",
-        "athlon1600/youtube-downloader": "^2.1"
+        "php": "^8.0.2",
+        "athlon1600/youtube-downloader": "^3.1",
+        "guzzlehttp/guzzle": "^7.4",
+        "laravel/framework": "^9.6",
+        "laravel/sanctum": "^2.15.0",
+        "laravel/tinker": "^2.7"
     },
     "require-dev": {
-        "facade/ignition": "^2.5",
-        "fakerphp/faker": "^1.11.0",
-        "mockery/mockery": "^1.4.2",
-        "nunomaduro/collision": "^5.1",
-        "phpunit/phpunit": "^9.4.3"
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": []
-        }
+        "fakerphp/faker": "^1.19.0",
+        "laravel/sail": "^1.13.8",
+        "mockery/mockery": "^1.5.0",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.5.20",
+        "spatie/laravel-ignition": "^1.2"
     },
     "autoload": {
         "psr-4": {
@@ -45,12 +32,13 @@
             "Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
@@ -58,5 +46,17 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

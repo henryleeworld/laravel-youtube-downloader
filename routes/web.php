@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('youtube', [YouTubeController::class, 'index']);
 Route::post('youtube/download', [YouTubeController::class, 'download']);
 Route::get('youtube/stream', [YouTubeController::class, 'stream']);
