@@ -7,18 +7,18 @@
     "require": {
         "php": "^8.0.2",
         "athlon1600/youtube-downloader": "^3.1",
-        "guzzlehttp/guzzle": "^7.4",
-        "laravel/framework": "^9.26",
+        "guzzlehttp/guzzle": "^7.5",
+        "laravel/framework": "^9.34",
         "laravel/sanctum": "^2.15.1",
         "laravel/tinker": "^2.7"
     },
     "require-dev": {
         "fakerphp/faker": "^1.20.0",
-        "laravel/sail": "^1.15.4",
-        "mockery/mockery": "^1.5.0",
-        "nunomaduro/collision": "^6.2",
-        "phpunit/phpunit": "^9.5.23",
-        "spatie/laravel-ignition": "^1.4"
+        "laravel/sail": "^1.16.2",
+        "mockery/mockery": "^1.5.1",
+        "nunomaduro/collision": "^6.3",
+        "phpunit/phpunit": "^9.5.25",
+        "spatie/laravel-ignition": "^1.5"
     },
     "autoload": {
         "psr-4": {
