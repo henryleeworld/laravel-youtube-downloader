@@ -8,7 +8,7 @@
         "php": "^8.1",
         "athlon1600/youtube-downloader": "^3.1",
         "guzzlehttp/guzzle": "^7.5",
-        "laravel/framework": "^10.4",
+        "laravel/framework": "^10.5",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8"
     },
@@ -17,7 +17,7 @@
         "laravel/pint": "^1.7",
         "laravel/sail": "^1.21",
         "mockery/mockery": "^1.5.1",
-        "nunomaduro/collision": "^7.3",
+        "nunomaduro/collision": "^7.4",
         "phpunit/phpunit": "^10.0",
         "spatie/laravel-ignition": "^2.0"
     },
