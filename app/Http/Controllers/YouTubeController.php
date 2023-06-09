@@ -2,19 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\YouTubeDownloaderService;
 use Illuminate\Http\Request;
+use YouTube\YouTubeDownloader;
 use YouTube\YouTubeStreamer;
 
 class YouTubeController extends Controller
 {
+    private $youTubeDownloader;
 
-    private $youTubeDownloaderService;
-
-    public function __construct(YouTubeDownloaderService $youTubeDownloaderService, YouTubeStreamer $youTubeStreamer)
+    public function __construct(YouTubeDownloader $youTubeDownloader, YouTubeStreamer $youTubeStreamer)
     {
-        $this->youTubeDownloaderService = $youTubeDownloaderService;
-        $this->youTubeStreamer          = $youTubeStreamer;
+        $this->youTubeDownloader = $youTubeDownloader;
+        $this->youTubeStreamer   = $youTubeStreamer;
     }
 
     public function index() 
@@ -24,7 +23,7 @@ class YouTubeController extends Controller
 
     public function download(Request $request) 
     {
-        $downloadOptions = $this->youTubeDownloaderService->getDownloadLinks($request->url);
+        $downloadOptions = $this->youTubeDownloader->getDownloadLinks($request->url);
         $error = '';
         if (!$downloadOptions->getAllFormats()) {
             $error = 'No links found';
