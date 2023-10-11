@@ -8,14 +8,14 @@
         "php": "^8.1",
         "athlon1600/youtube-downloader": "^3.1",
         "guzzlehttp/guzzle": "^7.8",
-        "laravel/framework": "^10.21",
-        "laravel/sanctum": "^3.2",
+        "laravel/framework": "^10.22",
+        "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23.0",
-        "laravel/pint": "^1.11",
-        "laravel/sail": "^1.23",
+        "laravel/pint": "^1.12",
+        "laravel/sail": "^1.24",
         "mockery/mockery": "^1.6.6",
         "nunomaduro/collision": "^7.8",
         "phpunit/phpunit": "^10.3",
