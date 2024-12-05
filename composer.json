@@ -7,7 +7,7 @@
     "require": {
         "php": "^8.2",
         "athlon1600/youtube-downloader": "^3.1",
-        "laravel/framework": "^11.14",
+        "laravel/framework": "^11.15",
         "laravel/tinker": "^2.9"
     },
     "require-dev": {

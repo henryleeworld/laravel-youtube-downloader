@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "150351155742f22c6740711e5eacf484",
+    "content-hash": "8af1b7088c22532bf3b14d888acf2c19",
     "packages": [
         {
             "name": "athlon1600/php-curl-client",
